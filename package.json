@@ -1,0 +1,29 @@
+{
+  "name": "projeto-desconecta",
+  "version": "1.0.0",
+  "description": "projeto desconecta",
+  "homepage": "https://github.com/AnaKalini/PROJETO-DESCONECTA#readme",
+  "bugs": {
+    "url": "https://github.com/AnaKalini/PROJETO-DESCONECTA/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaKalini/PROJETO-DESCONECTA.git"
+  },
+  "license": "ISC",
+  "author": "ana",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "mongodb": "^7.9.0",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {}
+}
