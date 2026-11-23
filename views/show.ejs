@@ -11,10 +11,11 @@
     <table border="1">
         <thead>
             <tr>
-                <td>Nome</td>
+                <td>Nome Completo</td>
+                <td>Endereço</td>
                 <td>CPF</td>
-                <td>Email</td>
                 <td>Telefone</td>
+                <td>E-mail</td>
                 <td>Ação</td>
             </tr>
         </thead>
@@ -22,16 +23,16 @@
         <% crud.foreach(function(details) { %>
                 <tr>
                     <td>
-                        <%= details.nome %>
+                        <%= details.nomeCompleto %>
                     </td>
                     <td>
-                        <%= details.cpf %>
-                    </td>
-                    <td>
-                        <%= details.email %>
+                        <%= details.endereco %>
                     </td>
                     <td>
                         <%= details.telefone %>
+                    </td>
+                    <td>
+                        <%= details.email %>
                     </td>
                     <td><a href="/edit/<%= details._id %>">Editar</a> - <a href="/delete/<%= details._id %>">Deletar</a>
                     </td>
