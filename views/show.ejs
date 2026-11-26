@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CRUD SHOW</title>
+    <title>+Desconecta</title>
 </head>
 
 <body>
@@ -19,26 +19,23 @@
                 <td>Ação</td>
             </tr>
         </thead>
-    <tbody>
-        <% crud.foreach(function(details) { %>
+        <tbody>
+            <% crud.forEach(function(details) { %>
                 <tr>
+                    <td><%= details.nomeCompleto %></td>
+                    <td><%= details.cpf %></td>
+                    <td><%= details.telefone %></td>
+                    <td><%= details.email %></td>
                     <td>
-                        <%= details.nomeCompleto %>
-                    </td>
-                    <td>
-                        <%= details.endereco %>
-                    </td>
-                    <td>
-                        <%= details.telefone %>
-                    </td>
-                    <td>
-                        <%= details.email %>
-                    </td>
-                    <td><a href="/edit/<%= details._id %>">Editar</a> - <a href="/delete/<%= details._id %>">Deletar</a>
+                        <a href="/edit/<%= details._id %>">Editar</a> -
+                        <a href="/delete/<%= details._id %>">Deletar</a>
                     </td>
                 </tr>
-                <% }) %>
+            <% }) %>
         </tbody>
-    </table> <button><a href="/index">Novo</a></button>
+    </table>
+    <br>
+    <button><a href="/index">Novo</a></button>
 </body>
+
 </html>
