@@ -4,9 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Meu editar</title>
+        <link rel="icon" type="image/png" href="/logo.png">
+        <link rel="stylesheet" href="/style.css"
     </head>
 
     <body>
+        <header>   
+            <img class="logo src="/logo.png" alt="Logo Desconecta+">
+        </header>
         <h2>Desconect+ - Editar Registro</h2>
         <% crud.forEach(function(details) { %>
             <form action="/edit/<%= details._id %>" method="POST">
